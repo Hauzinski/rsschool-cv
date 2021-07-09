@@ -1,2 +1,1 @@
-# rsschool-cv
-Hauzinski/rsschool-cv
+https://Hauzinski.github.io/rsschool-cv/cv
