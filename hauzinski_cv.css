@@ -165,7 +165,13 @@ code {
 *Component section footer
 */
 
-time {
+.div-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+
   font-size: 1em;
   font-weight: bold;
   color: whitesmoke;
@@ -174,4 +180,53 @@ time {
   padding: 5px 15px;
 
   background-color: rgb(24, 40, 59);
+}
+
+time {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  color: whitesmoke;
+
+  background-color: rgb(24, 40, 59);
+}
+
+.github {
+  display: block;
+  width: 320px;
+  height: 45px;
+  padding-left: 45px;
+  background-image: url("github.svg");
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  line-height: 45px;
+  font-size: 1em;
+  font-weight: bold;
+  color: whitesmoke;
+  transition: 0.3s;
+}
+
+.rss {
+  display: block;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  width: 86px;
+  height: 32px;
+  background-image: url("rss.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-right: 111px;
+}
+.rss-year {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 21px;
+  letter-spacing: -2px;
+  color: #cbd5de;
+  line-height: 0.9;
+  font-weight: bold;
+  transition: 0.3s;
 }
