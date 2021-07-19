@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hauzinski CV" />
+    <link rel="stylesheet" href="hauzinski_cv.css" />
+    <title>Hauzinski CV</title>
+  </head>
+  <body>
+    <header>
+      <h1>Front-end developer</h1>
+      <div class="cv-head">
+        <img src="HauzinskiV.jpg" alt="foto cv" />
+        <div>
+          <h2>Hauzinski Vitali</h2>
+          <ul class="contacts">
+            <li><a href="mailto:hauzinski@gmail.com">hauzinski@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/hauzinski/">linkedin.com</a></li>
+          </ul>
+          <p>My purpose: getting pleasure from work, improving existing skills, developing new skills. Become a front-end developer.</p>
+          <p>My strengths: excellent planning, goal setting and timing, technical mindset, introvert.</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h3>Skills</h3>
+        <p>worked in the field of construction (more than 6 years), technical maintenance, quality control.</p>
+        <p class="bold">Computer languages:</p>
+        <ul class="list">
+          <li>Java and Kotlin - initial level (for familiarization).</li>
+          <li>Python - basics, experience in writing small scripts and applications.</li>
+          <li>JavaScript - basics, experience in writing small scripts and applications.</li>
+          <li>HTML and CSS - intermediate level (layout of sites for educational purposes).</li>
+          <li>SQL (MySQL) - entry level (write queries for educational purposes).</li>
+          <li>Markdown - advanced level.</li>
+        </ul>
+        <p class="bold">Development environments, editors and tools:</p>
+        <ul class="list">
+          <li>IntelliJ IDEA</li>
+          <li>PyCharm</li>
+          <li>Sublime Text</li>
+          <li>Visual Studio Code</li>
+          <li>MySQL Workbench</li>
+          <li>GIT</li>
+          <li>Gigma</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Code example</h3>
+        <p class="bold">Friday the 13ths function (JavaScript)</p>
+        <p>The function <span class="selected">fridayTheThirteenths</span> accepts a <span class="selected">start</span> year and an <span class="selected">end</span> year (inclusive), and returns all of the dates where the 13th of a month lands on a Friday in the given range of year(s). You can see this kata <a href="https://www.codewars.com/kata/540954232a3259755d000039" target="_blank">here</a>.</p>
+        <code>
+          function fridayTheThirteenths(start, end) {<br />
+          &nbsp;&nbsp;let answer = [];<br />
+          &nbsp;&nbsp;end = end || start;<br />
+          &nbsp;&nbsp;for (let year = start; year &lt;= end; year++) {<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;for (let month = 1; month &lt;= 12; month++) {<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (new Date(year, month - 1, 13).getDay() == 5) {<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;answer.push(month + "/13/" + year);<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+          &nbsp;&nbsp;}<br />
+          &nbsp;&nbsp;return answer.join(" ");<br />
+          }<br />
+        </code>
+        <p><span class="selected">CodeWars' profile:</span><a href="https://www.codewars.com/users/Hauzinski">Hauzinski</a>.</p>
+      </section>
+      <section>
+        <h3>Education</h3>
+        <p class="bold">I have been studing the following resources on my own:</p>
+        <ul class="list">
+          <li><a href="http://htmlbook.ru" target="_blank">htmlbook.ru</a></li>
+          <li><a href="https://ru.code-basics.com" target="_blank">code-basics.com</a></li>
+          <li><a href="https://webref.ru" target="_blank">webref.ru</a></li>
+          <li><a href="https://htmlacademy.ru" target="_blank">htmlacademy.ru</a></li>
+          <li><a href="https://praktikum.yandex.ru" target="_blank">Яндекс практикум</a></li>
+          <li><a href="https://learn.javascript.ru" target="_blank">learn.javascript.ru</a></li>
+        </ul>
+        <p>I started, but didn't finish the cource "JS / FRONT-END" <a href="https://rs.school/" target="_blank">RS School</a> - I haven't enough knowledge of JavaScript</p>
+        <p>I have learned the basics of testing</p>
+        <p class="bold">English language level:</p>
+        <p>I have passed education at streamline school at level A2 (Elementary). I have been studing the language on my own on the site <a href="https://lingualeo.com" target="_blank">lingualeo</a>.</p>
+      </section>
+    </main>
+    <footer><time datetime="2021-07-19">2021-07-19</time></footer>
+  </body>
+</html>
